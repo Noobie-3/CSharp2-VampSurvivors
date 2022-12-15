@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2120082708031092175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120082708031092172}
+  - component: {fileID: 5158593903955529763}
+  - component: {fileID: 6628360517537494339}
+  - component: {fileID: -8499767630435966055}
+  - component: {fileID: 4882988410737061518}
+  - component: {fileID: 5275731827934143112}
+  m_Layer: 0
+  m_Name: WeaponSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120082708031092172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.136052, y: -0.35716316, z: 0.07081787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5158593903955529763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c85edb85ca4a842a0c0bc870dfb4d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  DaggerCoolDown: 0
+  AttackRate: 5
+  Dagger: {fileID: 7386617403846080296, guid: 4cbb62c529b037b438e8d3abaffe37d3, type: 3}
+--- !u!114 &6628360517537494339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598eea5ac0b8c724db7efca625b72475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  LightningCoolDown: 0
+  AttackRate: 10
+  offset: {x: 0, y: 0, z: 0}
+  Lightning: {fileID: 6278312096529164302, guid: c71f039e34cd6e44abd7d146e8f04fee, type: 3}
+  Enemies: []
+  RandomNum: 0
+--- !u!114 &-8499767630435966055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2726ee6af7ab3449fd3d7698b9a34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  ShieldCoolDown: 0
+  AttackRate: 4
+  Shield: {fileID: 4191336575582426600, guid: a1c9c219253067f48b3e4640cae7fd5c, type: 3}
+--- !u!114 &4882988410737061518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8498f39ab1ee449b68e6f50210afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfProjectiles: 5
+  projectile: {fileID: 8918195562453797548, guid: eb6cd29dbfd751f449aa4aaebfd757e8, type: 3}
+  startPoint: {x: 0, y: 0}
+  player: {fileID: 0}
+  radius: 1.9
+  FollowerPreFab: {fileID: 8662250693066523718, guid: 1b5ed772d31e49c41adbdb5693b0a5ba, type: 3}
+  FollowerOut: 0
+  Follower: {fileID: 0}
+  WeaponLevel: 1
+  MoveSpeed: 0
+  AllSpinners: []
+  LevelOne: {fileID: 0}
+  LevelTwo: {fileID: 0}
+  LevelThree: {fileID: 0}
+  LevelFour: {fileID: 0}
+  LevelFive: {fileID: 0}
+  LevelSix: {fileID: 0}
+  LevelSeven: {fileID: 0}
+  LevelMax: {fileID: 0}
+--- !u!114 &5275731827934143112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120082708031092175}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f432a8dcb438ad48bca887a80268932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  SwordCoolDown: 0
+  AttackRate: 5
+  Sword: {fileID: 5385075069405894393, guid: 4925922c366c6694c983b2bec5c13e1b, type: 3}
